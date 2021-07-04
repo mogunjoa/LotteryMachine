@@ -128,8 +128,6 @@ class MainActivity : AppCompatActivity() {
 
         numberList.shuffle()
 
-        val newNumberList = pickNumberSet.toList() + numberList.subList(0, 6 - pickNumberSet.size)
-
-        return newNumberList.sorted()
+        return pickNumberSet.toList() + numberList.subList(0, 6 - pickNumberSet.size).sorted()
     }
 }
